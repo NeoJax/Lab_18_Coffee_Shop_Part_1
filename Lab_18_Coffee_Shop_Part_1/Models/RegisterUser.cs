@@ -14,6 +14,10 @@ namespace Lab_18_Coffee_Shop_Part_1.Models
         public string Email { get; set; }
         [Required]
         [RegularExpression(@"(?=.*[!@#$%^&*])(?=.*\d)(?=.*[A-Z]).{8,}", ErrorMessage = "The password must contain a symbol(!@#$%^&*), a number, a capital letter, and must be atleast 8 characters." )]
-        public string Password { get; set; }
+        public string Pass { get; set; }
+        [Required]
+        public bool Regular { get; set; }
+        [Required]
+        public string Member { get; set; }
     }
 }
