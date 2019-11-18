@@ -40,6 +40,7 @@ namespace Lab_18_Coffee_Shop_Part_1.Controllers
 
             if (ModelState.IsValid)
             {
+                Console.WriteLine(newUser);
                 _context.Users.Add(newUser);
                 return View(user);
             }

@@ -11,6 +11,7 @@
   <ItemGroup>
     <Folder Include="Views\Registration\" />
     <Folder Include="Views\Shop\" />
+    <Folder Include="Views\User\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.0.0">

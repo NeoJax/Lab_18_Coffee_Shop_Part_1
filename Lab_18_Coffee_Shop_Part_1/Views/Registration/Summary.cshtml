@@ -8,3 +8,12 @@
 @model RegisterUser
 
 <p>Welcome @Model.UserName</p>
+<p>Do you want more information click</p>
+<form action="../User/Index" method="post">
+    <input type="hidden" name="UserName" value=@Model.UserName />
+    <input type="hidden" name="Email" value=@Model.Email />
+    <input type="hidden" name="Pass" value=@Model.Pass />
+    <input type="hidden" name="Regular" value=@Model.Regular />
+    <input type="hidden" name="Member" value=@Model.Member />
+    <input type="submit" value="here" />
+</form>
